@@ -20,7 +20,7 @@
 ## Exercise Overview
 The site - an individual gas station - is the most atomic piece of the GSTV business model - it is at the core of everything we do. Our hardware is installed at the site, advertisers purchase impressions at a site level, and schedules are generated on a per-site basis. Thus, keeping accurate information about a site is essential successful business operations.
 
-We are asking you to build out the functionality to create, edit and view flags for a given site. GSTV uses flags as a way to identify sites of particular importance - we may be doing research at the site, it may be near a key advertisers' offices, or our CEO may be taking clients for a site visit. Knowing which sites are flagged helps us focus and prioritize if something has gone wrong.
+We are asking you to build out the client and server-side functionality to create, edit and view flags for a given site. GSTV uses flags as a way to identify sites of particular importance - we may be doing research at the site, it may be near a key advertisers' offices, or our CEO may be taking clients for a site visit. Knowing which sites are flagged helps us focus and prioritize if something has gone wrong.
 
 **Some things to keep in mind**
 * A site may have multiple flags
@@ -136,7 +136,11 @@ We are asking you to build out the functionality to create, edit and view flags 
             * User is returned to the list of site flags which now reflects new/updated data
 
 ## What We Are Looking For
-We will be examining your Git repository prior to your interview. Please include the version of Node and MongoDB that you used in your pull request. Additionally, we will ask for you to demonstrate the functionality during the interview.
+We will be examining your Git repository prior to your interview. We will be looking at code quality, cleaniless, organization as well as how you implement the packaging of the application. Please do not use an automated app creator.
+
+We will ask for you to demonstrate the functionality during the interview.
+
+Please include the version of Node and MongoDB that you used in your pull request.
 
 ## Technical Details
 
