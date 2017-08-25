@@ -7,31 +7,31 @@ The site - an individual gas station - is the most atomic piece of the GSTV busi
 
 
 
-## [List Manager - Site Flagss](http://nb9u1i.axshare.com/#p=list_manager_-_site_flags)
-
-* Format
-    * Normal State
+## Functionality
+### List of Site Flags for an Individual Site
+* What you should see
+    * If the site has valid site flags
         * For each flag
-            * Flag Name
+            * Flag Type
             * Start Date
             * Edit Date
             * Edit Button
             * Remove Button
             * Rules
-                * Only display site flags if they are
+                * Only display site flags in the list if they are
                     * Permanent - there is not an end date
                     * Current - the startdate is in the past and the end date is in the future
                     * Future - the startdate and enddate are in the future
         * Add Flag Button
         * Close Button
-    * Empty State
+    * If the site does not have valid site flags
         * Message
             * There are no site flags.
         * Add Flag Button
         * Close Button
-* Functionality
+* How things should work
     * Edit Button
-        * Opens [Wizard - Site Flag](http://nb9u1i.axshare.com/#p=edit_-_wizard_-_site_flag) for selected site flag
+        * Allows the user to edit the information for an individual site flag
     * Remove Button
         * Removes selected site flag
         * Prompts user with modal
@@ -40,44 +40,47 @@ The site - an individual gas station - is the most atomic piece of the GSTV busi
             * Continue Button
                 * Client-side validates action
                     * [Malformed Data Validation](https://docs.google.com/document/d/1nnFrObZIgdTEMgPRnNxT91ESwI147i-fQJOiX9Qt7ik/edit#heading=h.46v3ns7qd60d)
-                    * If Client-side validation passes
-                        * Submit changes to the Server-side
+                    * If client-side validation passes
+                        * Submit changes to the server
                 * Server-side validates action
                     * [Malformed Data Validation](https://docs.google.com/document/d/1nnFrObZIgdTEMgPRnNxT91ESwI147i-fQJOiX9Qt7ik/edit#heading=h.46v3ns7qd60d)
-                * Update Data
-                    * [Direct Update](https://docs.google.com/document/d/1nnFrObZIgdTEMgPRnNxT91ESwI147i-fQJOiX9Qt7ik/edit#heading=h.z54f1dwhfet4)
-                * Modal is removed and the view will reflect changes from the action.
+                    * If server-side validation passes
+                      * Update data
+                      * Modal is removed and the view will reflect changes from the action.
             * Cancel Button
                 * Modal is removed
     * Add Flag Button
-        * Opens [Wizard - Site Flag](http://nb9u1i.axshare.com/#p=add_site_flag)
+        * Allows a user to add a new site flag
     * Close Button
-        * Implement common [close button](https://docs.google.com/document/d/1nnFrObZIgdTEMgPRnNxT91ESwI147i-fQJOiX9Qt7ik/edit#heading=h.7y8zkeqaas8) functionality
-### **_[Wizard - Site Fla_**g](http://nb9u1i.axshare.com/#p=wizard_-_site_flag)
-* Fields
+        * The user is returned to where they were when they started the action
+### Ability to add/edit
+* What you should see
     * Flag Type
         * Required to submit
         * Select
-            * Values
-                * Values are retrieved and not hardcoded
-                * Sample Values
-                    * Nielsen Research
-                    * Location Visit
+            * Possible Values
+                * Advertiser - Location Priority
+                * Retailer - Location Priority
+                * Retailer - Showcase
+                * GSTV - Site Visit
+                * GSTV - Showcase
+                * GSTV - Nielsen Survey
+                * GSTV - Research Survey
+                * GSTV - Unsellable
     * Start Date
         * Datepicker
-            * Is not required
+            * Is not required to submit
             * If end date is provided
-                * must be before end date
+                * The start date must be before end date
     * End Date
         * Datepicker
-            * Is not required
+            * Is not required to submit
             * If start date is provided
-                * must be after start date
-                * must be today or in the future
-
+                * The end date must be after start date
+                * The end date must be today or in the future
     * Close Button
     * Submit Button
-* Functionality
+* How things should work
     * Close Button
         * Implement common [close button](https://docs.google.com/document/d/1nnFrObZIgdTEMgPRnNxT91ESwI147i-fQJOiX9Qt7ik/edit#heading=h.7y8zkeqaas8) functionality
     * Submit Button
