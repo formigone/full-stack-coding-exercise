@@ -22,19 +22,19 @@ The site - an individual gas station - is the most atomic piece of the GSTV busi
 
 We are asking you to build out the functionality to create, edit and view flags for a given site. GSTV uses flags as a way to identify sites of particular importance - we may be doing research at the site, it may be near a key advertisers' offices, or our CEO may be taking clients for a site visit. Knowing which sites are flagged helps us focus and prioritize if something has gone wrong.
 
-Some things to keep in mind
+**Some things to keep in mind**
 * A site may have multiple flags
 * A site flag may have a start date but not an end date
 * A site flag may have an end date, but not a start date
 * A site flag may have both an end date and a start date
 
-You do not need to worry about
+**You do not need to worry about**
 * Authorization or authentication
 * Deployment
 
 ## Functionality
 ### List of Site Flags for an Individual Site
-* What you should see
+* **What the user will see**
     * If the site has valid site flags
         * For each flag
             * Flag Type
@@ -54,7 +54,7 @@ You do not need to worry about
             * There are no site flags.
         * Add Flag Button
         * Close Button
-* How things should work
+* **How things should work**
     * Edit Button
         * Allows the user to edit the information for an individual site flag
     * Remove Button
@@ -80,7 +80,7 @@ You do not need to worry about
         * The user is returned to where they were when they started and the view does not reflect any changes
 
 ### Ability to Add or Edit Site Flags for an Individual Site
-* What you should see
+* **What the user will see**
     * Flag Type
         * **Required to submit**
         * Select
@@ -106,7 +106,7 @@ You do not need to worry about
                 * The end date must be today or in the future
     * Close Button
     * Submit Button
-* How things should work
+* **How things should work**
     * Close Button
         * User is returned to the spot where they started and the view does not reflect any changes
     * Submit Button
