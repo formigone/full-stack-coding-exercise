@@ -1,9 +1,34 @@
 # GSTV Full Stack Coding Exercise
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [GSTV Full Stack Coding Exercise](#gstv-full-stack-coding-exercise)
+	- [Exercise Overview](#exercise-overview)
+	- [Functionality](#functionality)
+		- [List of Site Flags for an Individual Site](#list-of-site-flags-for-an-individual-site)
+		- [Ability to Add or Edit Site Flags for an Individual Site](#ability-to-add-or-edit-site-flags-for-an-individual-site)
+		- [System Requirements](#system-requirements)
+		- [Version Control](#version-control)
+			- [GitFlow and GithubFlow](#gitflow-and-githubflow)
+			- [Submitting Your Work](#submitting-your-work)
+		- [JavaScript](#javascript)
+			- [Unit Testing](#unit-testing)
+
+<!-- /TOC -->
+
 ## Exercise Overview
 The site - an individual gas station - is the most atomic piece of the GSTV business model - it is at the core of everything we do. Our hardware is installed at the site, advertisers purchase impressions at a site level and schedules are generated on a per-site basis. Thus, keeping accurate information about a site is essential successful business operations.
 
+We are asking you to build out the ability to create, edit and view flags for a given site. GSTV uses flags as a way to identify sites of particular importance - we may be doing research at the site, it may be near a key advertisers' offices, or our CEO may be taking clients for a site visit. Knowing which sites are flagged helps us focus and prioritize if something has gone wrong.
 
+Some things to keep in mind
+* A site may have multiple flags
+* A site flag may have a start date but not an end date
+* A site flag may have an end date, but not a start date
+* A site flag may have both an end date and a start date
+
+You do not need to worry about
+* Authorization or authentication
 
 ## Functionality
 ### List of Site Flags for an Individual Site
