@@ -6,7 +6,8 @@
 - [Functionality](#functionality)
 	- [List of Site Flags for an Individual Site](#list-of-site-flags-for-an-individual-site)
 	- [Ability to Add or Edit Site Flags for an Individual Site](#ability-to-add-or-edit-site-flags-for-an-individual-site)
-	- [System Requirements](#system-requirements)
+- [Technical Details](#technical-details)
+	- [Requirements](#requirements)
 	- [Version Control](#version-control)
 		- [GitFlow and GithubFlow](#gitflow-and-githubflow)
 		- [Submitting Your Work](#submitting-your-work)
@@ -132,7 +133,10 @@ You do not need to worry about
             * Update data
             * User is returned to the list of site flags which now reflects new/updated data
 
-### System Requirements
+## Technical Details
+
+### Requirements
+You must use
 * Node.js `^4.0.0`
 * MongoDB `^3.2.0`
 
