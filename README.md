@@ -1,18 +1,17 @@
 # GSTV Full Stack Coding Exercise
 
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+<!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [GSTV Full Stack Coding Exercise](#gstv-full-stack-coding-exercise)
-	- [Exercise Overview](#exercise-overview)
-	- [Functionality](#functionality)
-		- [List of Site Flags for an Individual Site](#list-of-site-flags-for-an-individual-site)
-		- [Ability to Add or Edit Site Flags for an Individual Site](#ability-to-add-or-edit-site-flags-for-an-individual-site)
-		- [System Requirements](#system-requirements)
-		- [Version Control](#version-control)
-			- [GitFlow and GithubFlow](#gitflow-and-githubflow)
-			- [Submitting Your Work](#submitting-your-work)
-		- [JavaScript](#javascript)
-			- [Unit Testing](#unit-testing)
+- [Exercise Overview](#exercise-overview)
+- [Functionality](#functionality)
+	- [List of Site Flags for an Individual Site](#list-of-site-flags-for-an-individual-site)
+	- [Ability to Add or Edit Site Flags for an Individual Site](#ability-to-add-or-edit-site-flags-for-an-individual-site)
+	- [System Requirements](#system-requirements)
+	- [Version Control](#version-control)
+		- [GitFlow and GithubFlow](#gitflow-and-githubflow)
+		- [Submitting Your Work](#submitting-your-work)
+	- [JavaScript](#javascript)
+		- [Unit Testing](#unit-testing)
 
 <!-- /TOC -->
 
