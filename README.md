@@ -3,10 +3,10 @@
 <!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [Exercise Overview](#exercise-overview)
-- [What We Are Looking For](#what-we-are-looking-for)
 - [Functionality](#functionality)
 	- [List of Site Flags for an Individual Site](#list-of-site-flags-for-an-individual-site)
 	- [Ability to Add or Edit Site Flags for an Individual Site](#ability-to-add-or-edit-site-flags-for-an-individual-site)
+- [What We Are Looking For](#what-we-are-looking-for)
 - [Technical Details](#technical-details)
 	- [Required Technology](#required-technology)
 	- [Version Control](#version-control)
@@ -31,9 +31,6 @@ Some things to keep in mind
 You do not need to worry about
 * Authorization or authentication
 * Deployment
-
-## What We Are Looking For
-We will be examining your Git repository prior to your interview. Please include the version of Node and MongoDB that you used in your pull request. Additionally, we will ask for you to demonstrate the functionality during the interview.
 
 ## Functionality
 ### List of Site Flags for an Individual Site
@@ -137,6 +134,9 @@ We will be examining your Git repository prior to your interview. Please include
           * If validation passes
             * Update data
             * User is returned to the list of site flags which now reflects new/updated data
+
+## What We Are Looking For
+We will be examining your Git repository prior to your interview. Please include the version of Node and MongoDB that you used in your pull request. Additionally, we will ask for you to demonstrate the functionality during the interview.
 
 ## Technical Details
 
