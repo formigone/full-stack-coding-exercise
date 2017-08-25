@@ -3,8 +3,6 @@
 ## Exercise Overview
 The site - an individual gas station - is the most atomic piece of the GSTV business model - it is at the core of everything we do. Our hardware is installed at the site, advertisers purchase impressions at a site level and schedules are generated on a per-site basis. Thus, keeping accurate information about a site is essential successful business operations.
 
-## What We Are Looking For
-
 
 
 ## Functionality
@@ -38,25 +36,26 @@ The site - an individual gas station - is the most atomic piece of the GSTV busi
             * Message
                 * Do you want to remove {item}?
             * Continue Button
-                * Client-side validates action
-                    * [Malformed Data Validation](https://docs.google.com/document/d/1nnFrObZIgdTEMgPRnNxT91ESwI147i-fQJOiX9Qt7ik/edit#heading=h.46v3ns7qd60d)
-                    * If client-side validation passes
-                        * Submit changes to the server
-                * Server-side validates action
-                    * [Malformed Data Validation](https://docs.google.com/document/d/1nnFrObZIgdTEMgPRnNxT91ESwI147i-fQJOiX9Qt7ik/edit#heading=h.46v3ns7qd60d)
-                    * If server-side validation passes
-                      * Update data
-                      * Modal is removed and the view will reflect changes from the action.
+                * Validation
+                  - Malformed Data Validation
+                    - If any required items are not formatted as expected
+                      - Submit fails
+                        - Message displayed to the user
+                          - Unable to Create/Update: {itemName} {itemValue} does not match the expected format.
+                  * If server-side validation passes
+                    * Update data
+                    * Modal is removed and the view will reflect changes from the action.
             * Cancel Button
                 * Modal is removed
     * Add Flag Button
         * Allows a user to add a new site flag
     * Close Button
-        * The user is returned to where they were when they started the action
-### Ability to add/edit
+        * The user is returned to where they were when they started and the view does not reflect any changes
+
+### Ability to Add or Edit Site Flags for an Individual Site
 * What you should see
     * Flag Type
-        * Required to submit
+        * **Required to submit**
         * Select
             * Possible Values
                 * Advertiser - Location Priority
@@ -82,29 +81,32 @@ The site - an individual gas station - is the most atomic piece of the GSTV busi
     * Submit Button
 * How things should work
     * Close Button
-        * Implement common [close button](https://docs.google.com/document/d/1nnFrObZIgdTEMgPRnNxT91ESwI147i-fQJOiX9Qt7ik/edit#heading=h.7y8zkeqaas8) functionality
+        * User is returned to the spot where they started and the view does not reflect any changes
     * Submit Button
-        * Client-side validates values
-            * [Null Validation](https://docs.google.com/document/d/1nnFrObZIgdTEMgPRnNxT91ESwI147i-fQJOiX9Qt7ik/edit#heading=h.xub5amf6ityo)
-            * [Unchanged Data Validation](https://docs.google.com/document/d/1nnFrObZIgdTEMgPRnNxT91ESwI147i-fQJOiX9Qt7ik/edit#heading=h.zion6wljn9l)
-            * [Duplicate Validation](https://docs.google.com/document/d/1nnFrObZIgdTEMgPRnNxT91ESwI147i-fQJOiX9Qt7ik/edit#heading=h.n9yu5wjkri3r)
-            * [Malformed Data Validation](https://docs.google.com/document/d/1nnFrObZIgdTEMgPRnNxT91ESwI147i-fQJOiX9Qt7ik/edit#heading=h.46v3ns7qd60d)
-            * If Client-side validation passes
-                * Submit changes to the Server-side
-        * Server-side validates values
-            * [Null Validation](https://docs.google.com/document/d/1nnFrObZIgdTEMgPRnNxT91ESwI147i-fQJOiX9Qt7ik/edit#heading=h.xub5amf6ityo)
-            * [Unchanged Data Validation](https://docs.google.com/document/d/1nnFrObZIgdTEMgPRnNxT91ESwI147i-fQJOiX9Qt7ik/edit#heading=h.zion6wljn9l)
-            * [Duplicate Validation](https://docs.google.com/document/d/1nnFrObZIgdTEMgPRnNxT91ESwI147i-fQJOiX9Qt7ik/edit#heading=h.n9yu5wjkri3r)
-            * [Malformed Data Validation](https://docs.google.com/document/d/1nnFrObZIgdTEMgPRnNxT91ESwI147i-fQJOiX9Qt7ik/edit#heading=h.46v3ns7qd60d)
-        * Update Data
-            * [Direct Update](https://docs.google.com/document/d/1nnFrObZIgdTEMgPRnNxT91ESwI147i-fQJOiX9Qt7ik/edit#heading=h.z54f1dwhfet4)
-        * User is returned to the [Wizard - Site Flag](http://nb9u1i.axshare.com/#p=wizard_-_site_flag) and the view will reflect changes from the wizard.
-
-
-
-
-
-
+        * Validation
+          - Start Date/End Date Validation
+            - If the start date falls after the end date
+              - Message
+                - Unable to Create/Update: The start date must be before the end date
+            - If the end date falls before the start date
+              - Message
+                - Unable to Create/Update: The start date must be before the date time
+            - If the start date falls on the same date as the end date
+              - Message
+                - Unable to Create/Update: The start date may not be the same date as the end date
+          - Null Validation
+            - If any required items are null
+              - Submit fails
+                - Message displayed to the user
+                  - Unable to Create/Update: {itemName} is required.
+          - Malformed Data Validation
+            - If any required items are not formatted as expected
+              - Submit fails
+                - Message displayed to the user
+                  - Unable to Create/Update: {itemName} {itemValue} does not match the expected format.
+          * If validation passes
+            * Update data
+            * User is returned to the list of site flags which now reflects new/updated data
 
 ### System Requirements
 * Node.js `^4.0.0`
