@@ -20,7 +20,7 @@
 ## Exercise Overview
 The site - an individual gas station - is the most atomic piece of the GSTV business model - it is at the core of everything we do. Our hardware is installed at the site, advertisers purchase impressions at a site level, and schedules are generated on a per-site basis. Thus, keeping accurate information about a site is essential successful business operations.
 
-We are asking you to build out the client and server-side functionality to create, edit and view flags for a given site. GSTV uses flags as a way to identify sites of particular importance - we may be doing research at the site, it may be near a key advertisers' offices, or our CEO may be taking clients for a site visit. Knowing which sites are flagged helps us focus and prioritize if something has gone wrong.
+We are asking you to build out the client and server-side functionality to create, edit and view flags for multiple sites. GSTV uses flags as a way to identify sites of particular importance - we may be doing research at the site, it may be near a key advertisers' offices, or our CEO may be taking clients for a site visit. Knowing which sites are flagged helps us focus and prioritize if something has gone wrong.
 
 **Some things to keep in mind**
 * A site may have multiple flags
@@ -63,7 +63,7 @@ We are asking you to build out the client and server-side functionality to creat
             * Message
                 * Do you want to remove {item}?
             * Continue Button
-                * Validation
+                * Check for
                   - Malformed Data Validation
                     - If any required items are not formatted as expected
                       - Submit fails
